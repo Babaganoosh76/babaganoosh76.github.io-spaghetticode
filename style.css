@@ -1,0 +1,68 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-family: Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif;
+	font-size: 600%;
+	text-align: center;
+	animation: fadein 3s linear 0s 1 normal, changeColor 0.5s linear 3s infinite normal;
+}
+
+#title {
+	z-index: 2;
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	top: 40%;
+}
+
+.frog {
+	position: fixed;
+	top: 150px;
+	animation: frogAppear 3s linear 0s 1 normal;
+	max-width: 20%
+}
+
+#left.frog {
+	left: 0;
+	transform: scaleX(-1);
+}
+
+#right.frog {
+	right: 0;
+}
+
+#imgs{
+	position: fixed;
+}
+
+img {
+	position: fixed;
+}
+
+@keyframes fadein {
+    0%		{ opacity: 0; font-size: 100%; }
+    90%		{ opacity: 0; font-size: 100%; }
+    100%	{ opacity: 1; font-size: 600%; }
+}
+
+@keyframes changeColor {
+    0%		{ color: purple; }
+    10%		{ color: white; }
+    20%		{ color: red; }
+    30%		{ color: orange; }
+    40%		{ color: yellow; }
+    60%		{ color: green; }
+    70%		{ color: pink; }
+    80% 	{ color: blue; }
+    90%		{ color: orange; }
+    100%	{ color: black; }
+}
+
+@keyframes frogAppear {
+	0%		{ opacity: 0; }
+	99%		{ opacity: 0; }
+	100%	{ visibility: normal; }
+}
